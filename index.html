@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLFpf7NsFF-0n1h1FhmKFhfc6ZHsRPffo&libraries=places&callback=initMap"></script>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- <link rel="stylesheet" href="./css/custome.css"> -->
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="first">
+        <div class="text-input">
+            <div class="text">
+                <h1 class="text--light">
+                    centros de<br>servicio<br>autorizados<br>
+                </h1>
+                <h1 class="text--wide">cesa</h1>
+            </div>
+            
+        </div>
+    </div>
+    <div class="input-box" id="pac-card">
+        <div class="input-box__title">
+            <span class="text--light">BÚSQUEDA PUNTOS DE SERVICIO</span>
+        </div>
+        <div class="input-box__small">
+            <span class="text--light">ENCUENTRA LN CENTRO DE SERVICIO AUTORIZADO DE MB MOTOS CERCA DE TI.</span>
+        </div>
+        <div class="input-box__area" id="pac-container">
+            <input id="pac-input" type="text" size="10" placeholder="BUSQUEDA POR CÓDIGO POSTAL, CIUDAD NÚMERO DE CESA." />
+            <div type="button" class="search">
+                <img src="./image/search-solid.svg" alt="" srcset="" class="button-click">
+            </div>
+            <div type="button" class="close">
+                <img src="./image/window-close-regular.svg" alt="" srcset="" class="button-close">
+            </div>
+        </div>
+        <div class="input-box__small">
+            <img src="./image/marcador-de-posicion.svg" alt="" srcset="" class="image centerMove"><span class="text--light centerMove">encontrar ubicacion</span>
+        </div>
+    </div>
+    <div id="map"></div>
+    <div class="display-store">
+        <div class="accordion">
+            
+        </div>
+        <div class="more-button">Busca mas</div>
+    </div>
+    
+    <!-- <div id="infowindow-content">
+        <img src="" width="16" height="16" id="place-icon" />
+        <span id="place-name" class="title"></span><br />
+        <span id="place-address"></span>
+    </div> -->
+    <div class="icon-temp" style="display: none;">
+        <img src="./image/placeholder.svg"  alt="" srcset="">
+        <img src="./image/marcador-de-posicion.svg" alt="" srcset="">
+    </div>
+</body>
+
+<script src="./js/index.js"></script>
+<!-- <script src="./js/googlemap.js"></script> -->
+</html>

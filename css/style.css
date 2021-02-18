@@ -1,0 +1,305 @@
+.first {
+    width: 100%;
+    height: 100%;
+    background: transparent url(../image/CESA_MB_1920x1080.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 100px;
+    padding: 10rem;
+    text-transform: uppercase;
+    transition: all 1s;
+}
+.first.display-change {
+    height: 0px;
+    padding: 0px;
+}
+#map {
+    display: none;
+    height: 100%;
+}
+#map.display-change {
+    display: block;
+}
+/* first */
+
+
+.text-input {
+    width: 100%;
+    height: 100%;
+}
+.text h1 {
+    color: white;
+    font-size: 60px;
+    font-size: 6rem;
+    line-height: 0.8;
+}
+
+.input-box {
+    width: 40%;
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 100px;
+    z-index: 999;
+    transition: all 1s;
+}
+
+.input-box.display-change {
+    top: 105px;
+}
+.centerMove {
+    cursor: pointer;
+    color: rgb(41, 150, 41);
+}
+.centerMove.image {
+    width: 15px;
+    margin-right: 5px;
+    /* transform: rotate(110deg); */
+    display: block;
+}
+.centerMove.image.active {
+    display: none;
+}
+.display-store {
+    width: 40%;
+    height: 0px;
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+    z-index: 998;
+    background-color: white;
+    font-family: 'Thedus-WideLight';
+    padding: 0px;
+    overflow: auto;
+    opacity: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+
+}
+.display-store.display {
+    padding: 15px;
+    transition: all 1s;
+    opacity: 1;
+    top: 235px;
+    height: 50vh;
+}
+.display-store .store {
+    margin: 15px 0px;
+}
+.display-store .title {
+    cursor: pointer;
+    font-size: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+.display-store .more-button {
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(41, 150, 41);
+    border-radius: 5px;
+    transition: all 0.8s;
+}
+.display-store .more-button:hover {
+    background-color: rgb(41, 150, 41);
+    color: white;
+    transition: all 0.8s;
+}
+.accordion-item.active .title {
+    
+    border-bottom: 1px solid transparent;
+}
+.accordion-item.active {
+    border-bottom: 1px solid #333333;
+    padding-bottom: 10px;
+}
+.title__key {
+    font-family: 'Thedus-WideLight';
+    color: rgb(41, 150, 41);
+}
+.title__name {
+    font-family: 'Thedus-Wide';
+}
+.content>div {
+    padding: 15px 0px;
+}
+.content .content__address {
+    padding: 5px 0px;
+}
+.accordion-item .content {
+    font-size: 20px;
+    display: none;
+}
+.accordion-item.active .content {
+    display: block;
+}
+.content .content__awrap {
+    /* border: 1px solid rgb(41, 150, 41); */
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    transform: skewX(-20deg); /* Standard syntax */
+    
+}
+.content .content__go:hover {
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+}
+.content .content__go {
+    padding: 10px 30px;
+    color: rgb(41, 150, 41);
+    -ms-transform: skewX(20deg); /* IE 9 */
+    transform: skewX(20deg); /* Standard syntax */
+    border: 1px solid rgb(41, 150, 41);
+}
+.content__text {
+    color: rgb(41, 150, 41);
+}
+.input-box.display-change>div:nth-child(1),
+.input-box.display-change>div:nth-child(2) {
+    transition: all 1s;
+    display: none;
+}
+.input-box.display-change .input-box__area {
+    margin-top: 10px;
+}
+.input-box__title {
+    color: rgb(41, 150, 41);
+    font-size: 35px;
+}
+.input-box__small {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 0px;
+}
+.input-box__area {
+    margin-top: 50px;
+    position: relative;
+}
+.input-box__area input {
+    background-color: white;
+    width: 100%;
+    padding: 12px 135px 12px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Thedus-WideLight';
+    direction: ltr;
+}
+.input-box__area .search {
+    height: 100%;
+    width: 44px;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-box__area .button-click {
+    width: 32px;
+    height: 32px;
+    color: rgb(41, 150, 41);
+    cursor: pointer;
+}
+.input-box__area .close {
+    position: absolute;
+    right: 70px;
+    top: 0px;
+    padding: 8px !important;
+    background-color: transparent;
+    display: none;
+}
+.input-box__area .button-close {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.input-box.display-change .close {
+    display: block;
+}
+.no {
+    font-size: 24px;
+    color: #ee0000;
+    padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .input-box {
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+    .first.display-change {
+        height: 200px;
+    }
+    .first.display-change .text-input {
+        display: none;
+    }
+    .input-box.display-change {
+        top: 20px;
+    }
+    .display-store {
+        position: relative;
+        width: 80%;
+    }
+    .display-store.display {
+        top: 0px;
+    }
+    .display-store {
+        overflow: unset;
+    }
+    .pac-container {
+        position: fixed !important;
+        /* left: 84px;
+        top: 92px; */
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .first.display-change {
+        height: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .input-box {
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .input-box.display-change {
+        top: 20px;
+        transform: translate(-50%,0%);
+    }
+    .text-input {
+        width: 100%;
+        left: 0px;
+        display: none;
+    } 
+    .display-store {
+        position: relative;
+        width: 100%;
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .input-box {
+        width: 100%;
+        left: 0px;
+        transform: translate(0,-50%);
+    }
+    .input-box.display-change {
+        top: 20px;
+        transform: translate(0%,0%);
+    }
+    .input-box__area input {
+        font-size: 13px;
+    }
+    /* .first {
+        padding:20px;
+    } */
+}
+input {
+    
+  }
